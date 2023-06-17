@@ -1,4 +1,4 @@
-package Home_Work_Java;
+package Home_Work_Java.HW_1;
 import java.util.Scanner;
 public class Task_3 {
     public static void main(String[] args) {

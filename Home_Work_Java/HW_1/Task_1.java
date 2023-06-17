@@ -1,6 +1,6 @@
 // Задача 1: Вычислить сумму чисел от 1 до n
 
-package Home_Work_Java;
+package Home_Work_Java.HW_1;
 import java.util.Scanner;
 public class Task_1 {
     public static void main(String[] args) {

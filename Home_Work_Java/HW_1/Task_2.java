@@ -1,6 +1,6 @@
 // Задача 2: Вывести все простые числа от 1 до 1000
 
-package Home_Work_Java;
+package Home_Work_Java.HW_1;
 
 public class Task_2 {
     public static void main(String[] args) {

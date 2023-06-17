@@ -6,7 +6,7 @@
 Студент Петрова получил 4 по предмету Информатика.
 Студент Краснов получил 5 по предмету Физика. */
 
-package Home_Work_Java;
+package Home_Work_Java.HW_2;
 
 import java.io.FileReader;
 import java.io.FileWriter;

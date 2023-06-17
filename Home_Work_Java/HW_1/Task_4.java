@@ -4,7 +4,7 @@
 Предложить хотя бы одно решение или сообщить, что его нет.
 */
 
-package Home_Work_Java;
+package Home_Work_Java.HW_1;
 
 public class Task_4 {
     public static void main(String[] args) {
