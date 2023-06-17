@@ -1,5 +1,7 @@
 /*  Реализуйте алгоритм сортировки пузырьком числового массива, результат после каждой итерации запишите в лог-файл. */ 
 
+package Home_Work_Java;
+
 import java.io.IOException;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
@@ -17,7 +19,6 @@ public static void main(String[] args) throws IOException {
     StringBuilder sbArray = new StringBuilder();
         sbArray.append("Исходный массив: ");
         for (int i = 0; i < arr.length; i++) {
-            //  Math.random() - случайное число double из промежутка [0,1)
             arr[i] = (byte) (Math.random() * 100);
             sbArray.append(arr[i]);
             sbArray.append(" ");

@@ -4,6 +4,7 @@
 Если значение null, то параметр не должен попадать в запрос.
 Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
 */
+package Home_Work_Java;
 
 public class Task_5 {
     public static void main(String[] args) {
