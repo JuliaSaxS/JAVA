@@ -1,0 +1,6 @@
+июн. 25, 2023 12:24:13 AM Home_Work_Java.HW_4.Task_13 main
+WARNING: Некорректный выбор действия! Попробуйте снова.
+июн. 25, 2023 12:24:33 AM Home_Work_Java.HW_4.Task_13 main
+INFO: 65 - 45 = 20,00
+июн. 25, 2023 12:24:41 AM Home_Work_Java.HW_4.Task_13 main
+INFO: Работа программы завершена.

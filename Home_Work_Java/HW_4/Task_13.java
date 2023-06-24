@@ -1,3 +1,4 @@
+// В калькулятор добавьте возможность отменить последнюю операцию.
 package Home_Work_Java.HW_4;
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,6 +9,7 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 public class Task_13 {
     public static void main(String[] args) throws IOException {
+// создание log_calc.txt, запись изменений        
         Logger logger = Logger.getLogger(Task_13.class.getName());
         FileHandler fh = new FileHandler("log_calc.txt", false);
         logger.addHandler(fh);
@@ -17,14 +19,17 @@ public class Task_13 {
         Stack<String> operationStack = new Stack<>();
         Scanner iScanner = new Scanner(System.in);
         while (true) {
-            System.out.printf("Выберите нужное действие (Enter - завершение программы, 1 - калькулятор, 2 - показать последние вычисления, 3 - отменить последнюю операцию): ");
+// выбор операции
+            System.out.printf("Выберите нужное действие (Enter - завершение программы, 1 - калькулятор, 2 - показать последние вычисления, 3 - отменить последние вычисления): ");
             String str = iScanner.nextLine();
             if (str.equals("")) {
+// выход
                 iScanner.close();
                 logMessage = "Работа программы завершена.";
                 logger.info(logMessage);
                 break;
             } else if (str.equals("2")) {
+// вывод последнего вычисления
                 if (operationStack.empty()) {
                     logMessage = "Показать последние вычисления невозможно, т.к. не было выполнено ни одной операции!";
                     System.out.println(logMessage);
@@ -37,22 +42,24 @@ public class Task_13 {
                     logger.info(logMessage);
                 }
             } else if (str.equals("3")) {
+// отмена последнего вычисления
                 if (operationStack.empty()) {
-                    logMessage = "Отменить последнюю операцию невозможно, т.к. не было выполнено ни одной операции!";
+                    logMessage = "Отменить последнее вычисление невозможно, т.к. не было выполнено ни одной операции!";
                     System.out.println(logMessage);
                     logger.info(logMessage);
                 } else {
-                    logMessage = String.format("Последняя операция %s отменена.\n", operationStack.pop());
+                    logMessage = String.format("Последнее вычисление %s отменено.\n", operationStack.pop());
                     System.out.println(logMessage);
                     logger.info(logMessage);
                 }
             } else if (str.equals("1")) {
+// ввод значений до корректного ввода
                 int n1;
                 int n2;
                 while (true) {
                     try {
                         System.out.printf("Введите первое число: ");
-// считывание строк из консоли
+// считывание строк из консоли и выполнение вычислений
                         String nString1 = iScanner.nextLine();
                         n1 = Integer.parseInt(nString1);
                         System.out.printf("Введите второе число: ");
@@ -82,7 +89,7 @@ public class Task_13 {
                         logger.log(Level.WARNING, logMessage);
                     }
                 }
-// вывод результата с округлением до 2 знаков после запятой
+// вывод результата вычисления с округлением до 2 знаков после запятой
                 if (correctInput) {
                     logMessage = String.format("%d %s %d = %.2f", n1, operation, n2, result);
                     System.out.printf("%s\n", logMessage);
@@ -90,7 +97,7 @@ public class Task_13 {
                     logger.info(logMessage);
                 }
             } else {
-                logMessage = "Некорректный ввод выбора действия!";
+                logMessage = "Некорректный выбор действия! Попробуйте снова.";
                 System.out.println(logMessage);
                 logger.log(Level.WARNING, logMessage);
             }
