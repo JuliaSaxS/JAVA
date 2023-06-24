@@ -11,15 +11,15 @@ public class Task_10 {
             listNumbers.add((byte) (Math.random() * Byte.MAX_VALUE));
         }
 // Найти минимальное, максимальное и среднее из этого списка
-        System.out.printf("Целочисленный список: %s\n", listNumbers);
+        System.out.printf("произвольный целочисленный список: %s\n", listNumbers);
 
-        System.out.printf("Минимальное значение: %d\n", Collections.min(listNumbers));
-        System.out.printf("Максимальное значение: %d\n", Collections.max(listNumbers));
+        System.out.printf("Минимальное число из списка: %d\n", Collections.min(listNumbers));
+        System.out.printf("Максимальное число из списка: %d\n", Collections.max(listNumbers));
         double sum = 0;
         for (byte element : listNumbers) {
             sum += element;
         }
-        System.out.printf("Среднее значение: %.f\n", sum / listNumbers.size());
+        System.out.printf("Среднее арифметическое чисел из списка: %.1f\n", sum / listNumbers.size());
 
     }
 }
