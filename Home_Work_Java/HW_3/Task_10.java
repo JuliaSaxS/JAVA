@@ -5,10 +5,12 @@ import java.util.Collections;
 import java.util.List;
 public class Task_10 {
     public static void main(String[] args) {
+// Задан целочисленный список ArrayList
         List<Byte> listNumbers = new ArrayList<>();
         for (byte i = 0; i < 20; i++) {
             listNumbers.add((byte) (Math.random() * Byte.MAX_VALUE));
         }
+// Найти минимальное, максимальное и среднее из этого списка
         System.out.printf("Целочисленный список: %s\n", listNumbers);
 
         System.out.printf("Минимальное значение: %d\n", Collections.min(listNumbers));
