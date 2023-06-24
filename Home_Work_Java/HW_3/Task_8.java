@@ -71,7 +71,7 @@ public class Task_8 {
         for (byte i = 0; i < randomArray.length; i++) {
             randomArray[i] = (byte) (Math.random() * Byte.MAX_VALUE);
         }
-        System.out.printf("Исходный массив %s\n", Arrays.toString(randomArray));
+        System.out.printf("Исходный массив: %s\n", Arrays.toString(randomArray));
 // разбивка исходный массив на массивы длиной 2 и 1
         List<byte[]> listArrays = splitArray(randomArray);
         System.out.print("Массивы после разделения:");
@@ -79,6 +79,6 @@ public class Task_8 {
             System.out.printf(" %s ", Arrays.toString(arr));
         }
         System.out.println();
-        System.out.printf("Сортированный массив %s\n", Arrays.toString(mergeSort(listArrays)));
+        System.out.printf("Сортированный массив: %s\n", Arrays.toString(mergeSort(listArrays)));
     }
 }
