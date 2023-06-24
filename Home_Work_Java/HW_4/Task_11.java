@@ -9,7 +9,7 @@ public class Task_11 {
     }
     public static LinkedList<Integer> RevList_2(LinkedList<Integer> ll) {
         for (int i = 1; i < ll.size(); i++) {
-// удаление элементов справа от первого и перезапись их слева от него (переворот)
+// удаление элементов справа от первого и перезапись их слева от него ("переворот")
             ll.addFirst(ll.remove(i));
         }
         return ll;
@@ -21,7 +21,7 @@ public class Task_11 {
         }
         System.out.printf("LinkedList: %s\n", ll);
         ll = RevList_1(ll);
-        System.out.printf("LinkedList после переворота: %s\n", ll);
+        System.out.printf(" “Перевернутый” LinkedList: %s\n", ll);
         ll = RevList_2(ll);
     }
 }
