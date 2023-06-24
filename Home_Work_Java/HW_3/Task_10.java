@@ -19,7 +19,7 @@ public class Task_10 {
         for (byte element : listNumbers) {
             sum += element;
         }
-        System.out.printf("Среднее значение: %.2f\n", sum / listNumbers.size());
+        System.out.printf("Среднее значение: %.f\n", sum / listNumbers.size());
 
     }
 }
