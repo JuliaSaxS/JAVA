@@ -11,7 +11,7 @@ public class Task_10 {
             listNumbers.add((byte) (Math.random() * Byte.MAX_VALUE));
         }
 // Найти минимальное, максимальное и среднее из этого списка
-        System.out.printf("произвольный целочисленный список: %s\n", listNumbers);
+        System.out.printf("Произвольный целочисленный список: %s\n", listNumbers);
 
         System.out.printf("Минимальное число из списка: %d\n", Collections.min(listNumbers));
         System.out.printf("Максимальное число из списка: %d\n", Collections.max(listNumbers));
