@@ -19,9 +19,9 @@ public class Task_11 {
         for (int i = 0; i < 10; i++) {
             ll.add((int) (Math.random() * 10));
         }
-        System.out.printf("Произвольный LinkedList: %s\n", ll);
+        System.out.printf("LinkedList: %s\n", ll);
         ll = RevList_1(ll);
-        System.out.printf("Перевёрнутый LinkedList: %s\n", ll);
+        System.out.printf("LinkedList после переворота: %s\n", ll);
         ll = RevList_2(ll);
     }
 }
