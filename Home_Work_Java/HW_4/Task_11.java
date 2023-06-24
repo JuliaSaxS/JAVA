@@ -21,7 +21,7 @@ public class Task_11 {
         }
         System.out.printf("LinkedList: %s\n", ll);
         ll = RevList_1(ll);
-        System.out.printf(" “Перевернутый” LinkedList: %s\n", ll);
+        System.out.printf("“Перевернутый” LinkedList: %s\n", ll);
         ll = RevList_2(ll);
     }
 }
